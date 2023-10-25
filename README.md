@@ -17,4 +17,4 @@
 
 ## Author:
 
-2020 - Yaroslav Khudchenko https://www.linkedin.com/in/yaroslavkhudchenko/
+Developer Rahul
