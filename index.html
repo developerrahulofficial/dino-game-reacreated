@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>Three js runner</title>
+        <link rel="icon" href="favicon.ico" />
+</head>
+<body>
+    <canvas id='gameCanvas'></canvas>
+    <div id='display'>
+        <div id='bestResult'>
+            <div id='bestTitle'>HI:</div>
+            <div id='bestValue'>00000</div>
+        </div>
+        <div id='score'>
+            <div id='scoreValue'>00000</div>
+        </div>
+        
+    </div>
+    <div class="startMenu">
+        <div id='logoTrex'>
+            <div id='logoWrapDiv'><img src="./models/trex.png" alt="" class="logo"></div>
+            <div id='instruction'>
+                <div id='up'>
+                    <span id='upDownIcons'>↑</span><span>Jump</span>
+                </div>
+                <div id='down'>
+                    <span id='upDownIcons'>↓</span><span>Duck</span>
+                </div>
+            </div>
+        </div>
+        <div id='startMenuText'>
+            T-REX ENDLESS RUNNER
+        </div>
+        
+
+        <div id='loadingBar'>
+            <div id='loadingBarValue'></div>
+            <div class="startGameButton">
+                START
+            </div>
+        </div>
+       
+    </div>
+    
+    <div id='collapsedScreen'>
+        <div id='finalScore'>
+
+        </div>
+        <div id='restartButton'>
+            Restart
+        </div>
+    </>
+</body>
+</html>

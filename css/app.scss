@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'pixel';
+    src: url('./../fonts/PressStart2P-vaV7.ttf') format('truetype');
+} 
+* {
+    font-family: 'pixel';
+}
+@mixin upDownIcons {
+    border: 10px solid black;
+    padding: 20px;
+    font-size: 60px;
+    border-radius: 10px;
+    margin: 5px;
+}
+body {
+    margin: 0;
+    position: fixed;
+    #display {
+        position: fixed;
+        top: 35px;
+        right: 20px;
+        font-size: 30px;
+        display: flex;
+        justify-content: space-between;
+        width: 500px;
+        height: 120px;
+  
+        #score {
+            display: flex;
+            min-width: 200px;
+        }
+        #bestResult {
+            display: flex;
+        }
+    }
+    .startMenu {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: #C89143;
+        width: 100vw;
+        height: 100vh;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        #logoTrex {
+            display: flex;
+            justify-content: space-between;
+            width: 50%;
+            #instruction {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                #up {
+                    
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+                    #upDownIcons {
+                        @include upDownIcons;
+                    }
+                }
+                #down {
+                    
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+                    #upDownIcons {
+                        @include upDownIcons;
+                    }
+        
+                }
+            }
+        }
+       
+        #startMenuText {
+            font-size: 50px;
+            color: #0e5a1b;
+        }
+    
+        #loadingBar {
+            width: 90%;
+            height: 80px;
+            position: relative;
+            border-radius: 5px;
+            #loadingBarValue {
+                height: 100%;
+                background: #4e4e40;
+                max-width: 100%;
+                border-radius: 7px;
+            }
+            .startGameButton {
+                font-size: 40px;
+                cursor: pointer;
+                display: none;
+                min-height: 40px;
+                padding: initial;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                color: white;
+                color: #4e4e40;
+                font-size: 85px;
+            }
+        }
+    }    
+    #collapsedScreen {
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 100px;
+        color: white;
+        text-shadow: 2px 2px 2px black;
+    
+        #finalScore {
+            font-size: 90px;
+            text-align: center;
+            margin-bottom: 80px;
+        }
+        #restartButton {
+            font-size: 40px;
+            text-align: center;
+            cursor: pointer;
+        }
+    }
+    
+    
+   
+}
