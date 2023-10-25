@@ -1,4 +1,4 @@
-# T-REX ENDLESS RUNNER
+# Dino - runner
 
 ## Description
 
